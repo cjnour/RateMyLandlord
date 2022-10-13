@@ -1,23 +1,22 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="container1">
+        <h1>RateMyLandlord</h1>
+      </div>
+      <div className="container2">
+        <h1>the good stuff</h1>
+      </div>
+      <div className="container3">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          made by{" "}
+          <a href="https://chese.ca" target="_blank" rel="noreferrer">
+            CJ Nour
+          </a>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
     </div>
   );
 };
