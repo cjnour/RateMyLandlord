@@ -1,4 +1,5 @@
 import "./App.css";
+import MuiContainer from "./Components/MuiContainer";
 import MuiMenu from "./Components/MuiMenu";
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
       </div>
       <div className="container2">
         <h1>the good stuff</h1>
+        <MuiContainer />
       </div>
       <div className="container3">
         <p>
