@@ -7,8 +7,8 @@ export default function MuiContainer() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container fixed>
-        <Box sx={{ bgcolor: "#005950", height: "60vh", width: "100vh" }} />
+      <Container>
+        <Box sx={{ bgcolor: "#005950", height: "65vh", width: "60vw" }} />
       </Container>
     </React.Fragment>
   );
