@@ -2,13 +2,14 @@ import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
+import Cities from "../Pages/Cities";
 
 export default function MuiContainer() {
   return (
     <React.Fragment>
       <CssBaseline />
       <Container>
-        <Box sx={{ bgcolor: "#005950", height: "65vh", width: "60vw" }} />
+        <Cities />
       </Container>
     </React.Fragment>
   );

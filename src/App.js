@@ -1,5 +1,4 @@
 import "./App.css";
-import Cities from "./Pages/Cities";
 import MuiContainer from "./Components/MuiContainer";
 import MuiMenu from "./Components/MuiMenu";
 
@@ -24,7 +23,6 @@ const App = () => {
         </div>
       </div>
       <div className="container2">
-        <Cities />
         <MuiContainer />
       </div>
       <div className="container3">
