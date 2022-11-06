@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { connect } from "react-redux";
+import { setSelectedCity } from "../Redux/Main/MainActions";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -23,7 +24,12 @@ const Cities = (props) => {
           <Grid container spacing={2}>
             {props.cities.map((e) => {
               citiesDisplay.push(
-                <Grid item xs={3} key={e} onClick={() => console.log(e)}>
+                <Grid
+                  item
+                  xs={3}
+                  key={e}
+                  onClick={() => props.setSelectedCity(e.toString())}
+                >
                   <Item>
                     <img
                       style={{ width: "10rem", marginTop: "1rem" }}
@@ -46,7 +52,7 @@ const Cities = (props) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    // setCities: (cities) => dispatch(setCities(cities)),
+    setSelectedCity: (e) => dispatch(setSelectedCity(e)),
   };
 };
 

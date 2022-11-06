@@ -1,4 +1,4 @@
-import { SET_CITIES } from "../Constants";
+import { SET_CITIES, SET_SELECTED_CITY } from "../Constants";
 import initialState from "./InitialState";
 
 export const MainReducer = (state = initialState, action) => {
@@ -7,6 +7,12 @@ export const MainReducer = (state = initialState, action) => {
       return {
         ...state,
         cities: action.payload,
+      };
+    }
+    case SET_SELECTED_CITY: {
+      return {
+        ...state,
+        selectedCity: action.payload,
       };
     }
     default:

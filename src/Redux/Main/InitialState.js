@@ -5,7 +5,9 @@ const initialState = {
     "Kitchener-Waterloo",
     "Montreal",
     "Vancouver",
+    "London",
   ],
+  selectedCity: "",
 };
 
 export default initialState;
