@@ -3,10 +3,6 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import Hamilton from "../assets/ham.png";
-import Toronto from "../assets/tor.png";
-import Montreal from "../assets/mon.png";
-import Kitchener_Waterloo from "../assets/kit_wat.png";
 import { connect } from "react-redux";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -20,22 +16,25 @@ const Item = styled(Paper)(({ theme }) => ({
 const Cities = (props) => {
   let citiesDisplay = [];
   return (
-    <div
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
-    >
+    <div>
       <h1>Cities</h1>
       <div style={{ width: "100%" }}>
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={2} onClick={(e) => console.log(e)}>
+        <Box>
+          <Grid container spacing={2}>
             {props.cities.map((e) => {
               citiesDisplay.push(
-                <Grid item xs={3}>
+                <Grid item xs={3} key={e} onClick={() => console.log(e)}>
                   <Item>
-                    <img style={{ width: "10rem" }} src={e} alt={e} />
-                    <h4>{e}</h4>
+                    <img
+                      style={{ width: "10rem", marginTop: "1rem" }}
+                      src={require(`../assets/${e}.png`)}
+                      alt={e}
+                    />
+                    <h3>{e}</h3>
                   </Item>
                 </Grid>
               );
+              return null;
             })}
             {citiesDisplay}
           </Grid>
