@@ -1,12 +1,12 @@
-import { SET_ROUTE } from "../Constants";
+import { SET_CITIES } from "../Constants";
 import initialState from "./InitialState";
 
 export const MainReducer = (state = initialState, action) => {
   switch (action.type) {
-    case SET_ROUTE: {
+    case SET_CITIES: {
       return {
         ...state,
-        route: action.payload,
+        cities: action.payload,
       };
     }
     default:

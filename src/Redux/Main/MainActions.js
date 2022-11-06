@@ -1,8 +1,8 @@
-import { SET_ROUTE } from "../Constants";
+import { SET_CITIES } from "../Constants";
 
-export const setRoute = (route) => {
+export const setCities = (cities) => {
   return {
-    type: SET_ROUTE,
-    payload: route,
+    type: SET_CITIES,
+    payload: cities,
   };
 };

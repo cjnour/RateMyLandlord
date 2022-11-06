@@ -1,5 +1,5 @@
 const initialState = {
-  route: "",
+  cities: ["Hamilton", "Toronto", "Kitchener/Waterloo", "Montreal"],
 };
 
 export default initialState;
