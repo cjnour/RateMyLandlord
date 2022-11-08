@@ -2,6 +2,7 @@ import "./App.css";
 import MuiContainer from "./Components/MuiContainer";
 import MuiMenu from "./Components/MuiMenu";
 import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "./Components/Routes";
 
 const App = () => {
   return (
@@ -25,7 +26,7 @@ const App = () => {
           </div>
         </div>
         <div className="container2">
-          <MuiContainer />
+          <Routes />
         </div>
         <div className="container3">
           <p>
