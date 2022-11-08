@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import CityPage from "../Pages/CityPage";
 import Cities from "../Pages/Cities";
 
-const AnimatedRoutes = (props) => {
+const Routes = (props) => {
   const location = useLocation();
 
   //   useEffect(() => {
@@ -36,4 +36,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(AnimatedRoutes);
+export default connect(mapStateToProps, mapDispatchToProps)(Routes);
