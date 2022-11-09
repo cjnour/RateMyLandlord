@@ -34,7 +34,10 @@ const Cities = (props) => {
                       props.setSelectedCity(e.toString());
                   }}
                 >
-                  <Link to={`/${e.toLowerCase()}`}>
+                  <Link
+                    to={`/${e.toLowerCase()}`}
+                    style={{ textDecoration: "none" }}
+                  >
                     <Item>
                       <img
                         style={{ width: "60%", marginTop: "1rem" }}

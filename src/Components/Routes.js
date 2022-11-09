@@ -1,17 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { connect } from "react-redux";
-// import { setRoute } from "../Redux/Main/MainActions";
 import CityPage from "../Pages/CityPage";
 import Cities from "../Pages/Cities";
 
 const Routes = (props) => {
   const location = useLocation();
-
-  //   useEffect(() => {
-  //     props.setRoute(location.pathname.substring(1));
-  //   }, [location.pathname, props]);
-
   return (
     <Switch location={location} key={location.pathname}>
       <Route exact path="/">
