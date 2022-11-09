@@ -29,7 +29,7 @@ const App = () => {
         </div>
         <div className="container2">
           <Routes />
-          <HouseMap />
+          {/* <HouseMap /> */}
         </div>
         <div className="container3">
           <p>

@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
-import "./styles.css";
+import "./mapstyles.css";
 
 export default function HouseMap() {
   const { isLoaded } = useLoadScript({

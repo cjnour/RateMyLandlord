@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import { setSelectedCity } from "../Redux/Main/MainActions";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import Rating from "@mui/material/Rating";
 import HouseMap from "../Components/HouseMap";
 
 const CityPage = (props) => {
@@ -19,27 +19,37 @@ const CityPage = (props) => {
   });
 
   return (
-    <div>
+    <div
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
       <div>
         <h1>{arr}</h1>
       </div>
       <div>
-        <Card sx={{ maxWidth: 345 }}>
-          <CardMedia>
-            <HouseMap />
-          </CardMedia>
+        <Card sx={{ width: "50rem" }}>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Lizard
+              Terrible experience
             </Typography>
+            <div style={{ display: "flex" }}>
+              <HouseMap style={{}} />
+              <div>
+                <Typography component="legend">Poptarts</Typography>
+                <Rating name="read-only" value={1} readOnly />
+                <Typography component="legend">Soap Quantity</Typography>
+                <Rating name="read-only" value={4} readOnly />
+                <Typography component="legend">Microwave Spin-Rate</Typography>
+                <Rating name="read-only" value={5} readOnly />
+              </div>
+            </div>
             <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              The landlord wouldn't stop sniffing my underwear, caught them on
+              multiple accounts...
             </Typography>
           </CardContent>
           <CardActions>
             <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
+            <Button size="small">Report</Button>
           </CardActions>
         </Card>
       </div>
