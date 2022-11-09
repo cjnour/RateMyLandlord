@@ -4,8 +4,7 @@ import "./styles.css";
 
 export default function HouseMap() {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyCnpKTplXDbv9IUAedaPXVmcYY_mfFBTFg",
-    // process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
   });
 
   if (!isLoaded) return <div>Loading...</div>;
