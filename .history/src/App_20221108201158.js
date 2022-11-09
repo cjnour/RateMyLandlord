@@ -2,7 +2,7 @@ import "./App.css";
 import MuiMenu from "./Components/MuiMenu";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import Routes from "./Components/Routes";
-import HouseMap from "./Components/HouseMap";
+import SimpleMap from "./Components/SimpleMap";
 
 const App = () => {
   return (
@@ -29,7 +29,7 @@ const App = () => {
         </div>
         <div className="container2">
           <Routes />
-          <HouseMap />
+          <SimpleMap locations={locations} />
         </div>
         <div className="container3">
           <p>

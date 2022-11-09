@@ -29,7 +29,7 @@ const App = () => {
         </div>
         <div className="container2">
           <Routes />
-          <HouseMap />
+          <HouseMap locations={locations} />
         </div>
         <div className="container3">
           <p>

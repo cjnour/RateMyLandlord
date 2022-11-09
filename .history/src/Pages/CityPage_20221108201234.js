@@ -15,7 +15,6 @@ const CityPage = (props) => {
   arr.map((e, i) => {
     arr[0] = arr[0].toUpperCase();
     if (e === "-") arr[i + 1] = arr[i + 1].toUpperCase();
-    return null;
   });
 
   return (

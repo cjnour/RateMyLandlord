@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-        <div className="container1">
+        <<div className="container1">
           <div
             style={{
               display: "flex",

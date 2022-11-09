@@ -7,7 +7,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import HouseMap from "../Components/HouseMap";
+import SimpleMap from "../Components/SimpleMap";
 
 const CityPage = (props) => {
   let tempRoute = window.location.pathname.substring(1);
@@ -15,7 +15,6 @@ const CityPage = (props) => {
   arr.map((e, i) => {
     arr[0] = arr[0].toUpperCase();
     if (e === "-") arr[i + 1] = arr[i + 1].toUpperCase();
-    return null;
   });
 
   return (
@@ -26,7 +25,7 @@ const CityPage = (props) => {
       <div>
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia>
-            <HouseMap />
+            <SimpleMap />
           </CardMedia>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
