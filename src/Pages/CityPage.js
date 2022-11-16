@@ -8,6 +8,22 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Rating from "@mui/material/Rating";
 import HouseMap from "../Components/HouseMap";
+import { DataStore } from "@aws-amplify/datastore";
+import { Review } from "../models";
+
+await DataStore.save(
+  new Review({
+    address: "Lorem ipsum dolor sit amet",
+    cleanliness: 1020,
+    age: 1020,
+    accomodations: 1020,
+    overall: 123.45,
+    renovated: true,
+    would_recommend: true,
+    pets: true,
+    pests: true,
+  })
+);
 
 const CityPage = (props) => {
   let tempRoute = window.location.pathname.substring(1);
@@ -29,7 +45,7 @@ const CityPage = (props) => {
         <Card sx={{ width: "50rem" }}>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Terrible experience
+              {Review.address}
             </Typography>
             <div style={{ display: "flex" }}>
               <HouseMap style={{}} />
