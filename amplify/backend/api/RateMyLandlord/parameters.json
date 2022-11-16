@@ -1,0 +1,5 @@
+{
+  "AppSyncApiName": "RateMyLandlord",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
+}

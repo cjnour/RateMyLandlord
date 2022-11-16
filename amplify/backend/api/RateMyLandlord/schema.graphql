@@ -1,0 +1,12 @@
+type Review @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  address: String
+  cleanliness: Int
+  age: Int
+  accomodations: Int
+  overall: Float
+  renovated: Boolean
+  would_recommend: Boolean
+  pets: Boolean
+  pests: Boolean
+}
