@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { setSelectedCity } from "../Redux/Main/MainActions";
 import Card from "@mui/material/Card";
